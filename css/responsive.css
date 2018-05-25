@@ -1,0 +1,344 @@
+@charset "utf-8";
+@media only screen and (min-width:941px) and (max-width:1024px) {
+    .column_comunidad img {
+        width: 14%;
+    }
+}
+
+@media only screen and (max-width:980px) {
+    .column_comunidad img {
+        width: 35%;
+    }
+    .text_container h1 {
+        font-size: 2em;
+    }
+    .column h1 {
+        font-size: 30px;
+    }
+    .column {
+        padding: 2em 0;
+    }
+    .column p {
+        font-size: 15px;
+    }
+    .text_container span {
+        font-size: 1em;
+    }
+    .lines::before,
+    .lines::after {
+        display: none;
+    }
+    .column_forma_text h1 {
+        font-size: 2em;
+    }
+    .text_container_comunidad h1 {
+        font-size: 2em;
+    }
+    .column_preescolar p {
+        font-size: 1em;
+    }
+    .column_preescolar_min p {
+        font-size: .8em;
+    }
+    .text_container_cursos p {
+        font-size: 1em;
+    }
+    .column_cursos h1 {
+        font-size: 1.1em;
+    }
+    .column_admisions h1 {
+        font-size: 1.5em;
+    }
+    .column_admisions ul {
+        font-size: .9em;
+    }
+    .column_footer h1 {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    #section5 {
+        background-image: url(../images/backgrounds/bg_section5_1280.jpg);
+    }
+    #section7 {
+        background-image: url(../images/backgrounds/bg_section7_1280.jpg);
+    }
+    .main {
+        padding-top: 3.5em;
+    }
+    #nombre {
+        font-size: 3em;
+    }
+    .column_preescolar p {
+        margin-top: 25px;
+        font-size: 2em;
+        line-height: 20px;
+    }
+    .column_preescolar_min p {
+        font-size: 1.3em;
+        line-height: 27px;
+        margin: 0;
+        text-align: justify;
+    }
+    .column_admisions h1 {
+        font-size: 2.7em;
+    }
+    .column_admisions ul {
+        font-size: 1.4em;
+        line-height: 15px;
+    }
+    .column_forma_text {
+        width: 75%;
+    }
+    .column_forma_text p {
+        font-size: 1.5em;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (min-width:941px) and (max-width:1280px) {
+    .main_form {
+        max-width: 38em;
+    }
+    .main_calendario {
+        max-width: 16em;
+    }
+    .column_footer {
+        min-height: 50px;
+    }
+    .text_container {
+        padding: 0.875em;
+    }
+    .text_container_cursos p {
+        margin: 0;
+        line-height: 24px;
+    }
+    .column_preescolar_min p {
+        line-height: 18px;
+    }
+    .column_admisions {
+        min-height: 90px;
+    }
+    .column_cursos {
+        min-width: 231px;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    #form textarea {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .column_icesb_valores {
+        width: 100%;
+        ;
+    }
+}
+
+@media only screen and (max-width:1100px) {
+    .container_sections {
+        padding: 100px 0 0;
+    }
+    .main {
+        padding: 0;
+    }
+    .column {
+        min-height: auto;
+        min-width: auto;
+        padding: 3em 2em;
+        width: 100%;
+    }
+    .column_images {
+        min-height: auto;
+        min-width: auto;
+        padding: 3em 2em;
+        width: 100%;
+    }
+    .column h1 {
+        font-size: 50px;
+    }
+    .column p {
+        font-size: 22px;
+    }
+    .cycle-slideshow {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .main_icesb {
+        padding: 1em 0.875em;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .container_sections {
+        padding: 100px 0 0;
+    }
+}
+
+@media only screen and (max-width:1050px) {
+    .main {
+        padding: 0;
+    }
+    .column {
+        min-height: auto;
+        min-width: auto;
+        padding: 3em 2em;
+        width: 100%;
+    }
+    .column_images {
+        min-height: auto;
+        min-width: auto;
+        padding: 3em 2em;
+    }
+    .column h1 {
+        font-size: 50px;
+    }
+    .column p {
+        font-size: 22px;
+    }
+    .column_valores {
+        min-height: auto;
+        min-width: auto;
+        padding: 1em 2em;
+        width: 100%;
+    }
+    .column_cursos {
+        min-height: auto;
+        min-width: auto;
+        margin: 0 auto;
+        width: 25%;
+    }
+    #port {
+        padding: 87px 64px;
+    }
+    .column_contact {
+        width: 100%;
+        min-height: 100px;
+    }
+    .column_comunidad {
+        min-height: auto;
+        min-width: auto;
+        padding: 1em 2em;
+        width: 100%;
+    }
+    .comunidad_img {
+        display: none;
+    }
+    .column_preescolar {
+        width: 100%;
+        min-height: auto;
+        min-width: auto;
+    }
+    .column_preescolar_img {
+        display: none;
+    }
+    .text_container_comunidad {
+        display: block;
+    }
+    .column_preescolar_min {
+        width: 100%;
+        min-height: auto;
+        min-width: auto;
+    }
+    .column_preescolar p {
+        line-height: 13px;
+    }
+    .column_preescolar_min p {
+        line-height: 13px;
+    }
+    .main_comunidad {
+        padding: 0 50px;
+    }
+    #nombre {
+        display: none;
+    }
+}
+
+@media all and (max-width:600px) {
+    .column_cursos {
+        width: 50%;
+    }
+}
+
+@media all and (min-width:801px) and (max-width:1024px) {
+    #section6 {
+        background-image: url(../images/backgrounds/bg_section6_1280.jpg);
+    }
+    #header_container {
+        width: 1024px;
+    }
+    .main_menu {
+        font-size: 35px;
+    }
+    #welcome {
+        height: 440px;
+        margin: 155px auto 0;
+        min-width: 930px;
+        position: relative;
+        width: 960px;
+    }
+    #welcome_wrapper {
+        margin: 0 auto 0 -20px;
+        width: 910px;
+    }
+    #welcome_text {
+        color: #000;
+        display: inline;
+        float: left;
+        margin: 50px 0 0 20px;
+        width: 250px;
+        text-align: justify;
+        font-size: 16px;
+    }
+    #leyenda {
+        left: 16%;
+    }
+}
+
+@media all and (min-width:1091px) and (max-width:1280px) {
+    #section6 {
+        background-image: url(../images/backgrounds/bg_section6_1280.jpg);
+    }
+    .container_sections {
+        padding: 100px 40px 0;
+    }
+    #icesb_container {
+        margin: 145px 0 0;
+    }
+    #gallery_text {
+        margin: 18px auto 0;
+    }
+    #leyenda {
+        background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+        font-size: 25px;
+        left: 23%;
+        line-height: 20px;
+        margin-left: 40px;
+        margin-top: -80px;
+        padding: 10px;
+        position: absolute;
+        text-align: left;
+        top: 64%;
+    }
+    .errores {
+        font-size: 20px;
+        margin-top: -47px;
+        margin-left: 385px;
+    }
+}
+
+@media all and (min-width:1361px) and (max-width:1366px) {
+    #gallery_text {
+        margin: 71px auto 0;
+    }
+}
+
+@media all and (min-width:1281px) and (max-width:1360px) {
+    #gallery_text {
+        margin: 75px auto 0;
+    }
+}
