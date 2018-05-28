@@ -203,9 +203,9 @@ $(document).ready(function() {
                  {
                       var content = JSON.parse(data);
                       if (content.info=="success"){
-                        $("#mensaje").fadeIn('fast').html('<div class="ok">'+content.msg+'</div>');
+                        $("#mensaje").fadeIn('fast').html('<div class="chido">'+content.msg+'</div>');
                       }else{
-                        $("#mensaje").fadeIn('fast').html('<div class="error">'+content.msg+'</div> <br /> <div id="backError" onClick="back();"> << Reintentar </div>');
+                        $("#mensaje").fadeIn('fast').html('<div class="nel">'+content.msg+'</div> <br /> <div id="backError" onClick="back();"> << Reintentar </div>');
 
                       }
                       //alert('enviado');

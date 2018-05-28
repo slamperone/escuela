@@ -1545,6 +1545,17 @@ nav#fp-nav ul li:hover span {
     font-family: jasmineUPC, arial, sansSerif;
     font-size: 1.2em;
 }
+/*ponle los estilos que se te pegen tu puta gana*/ 
+.chido{
+font-size: 2em;
+color: #1FBA12;
+}
+.nel{
+font-size: 2.2em;
+color: #FFF;
+background: #B20003;
+}
+.error{}
 #form .text_input.error, #form .text_block.error{
   border-color: rgba(228,30,39,0.4);
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) inset, 0 0 8px rgba(228,30,39,0.6);
@@ -1553,7 +1564,7 @@ nav#fp-nav ul li:hover span {
 }
 
 #mensaje {
-    position: absolute;
+    /*position: absolute;*/
     top: 40%;
     font-family: "VW-Head Regular";
     font-size: 20px;

@@ -57,6 +57,7 @@ function send($params,$msj)
 	$phpMailer->Debugoutput = 'html';
 	$phpMailer->Host        = 'mail.develupme.com';
 	$phpMailer->Port        = 465;
+	$phpMailer->SMTPSecure = 'ssl';
 	$phpMailer->SMTPAuth    = true;
 	$phpMailer->CharSet     = 'UTF-8';
 
@@ -72,10 +73,11 @@ function send($params,$msj)
 
 
 	if(!$phpMailer->send()) {
-				echo "Mailer Error: " . $phpMailer->ErrorInfo;
+				//echo "Mailer Error: " . $phpMailer->ErrorInfo;
 				$res = true;
 		}
-	echo $res;
+
+	//echo $res;
 
 	return $res;
 
