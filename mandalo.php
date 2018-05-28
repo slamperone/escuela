@@ -10,12 +10,12 @@ if (isset($_POST) && !empty($_POST)) {
 
 	$params  = array(
 		'yo'    	=> trim($_POST['name']),
-		'mail'  	=> trim($_POST['email']),
-		'telefono' => trim($_POST['telephone']),
-		'mensaje'  	=> trim($_POST['message']),
+		'mail'  	=> trim($_POST['mail']),
+		'telefono' => trim($_POST['tel']),
+		'mensaje'  	=> trim($_POST['msg']),
 		'fecha'     => date('d/F/Y'),
 		'hora'      => date('H:i'),
-		'asunto'    => 'Formulario de contacto.'
+		'asunto'    => 'Alguien escribio en la página web'
 	);
 	$tipos = 'mensaje.php';
 
@@ -55,15 +55,15 @@ function send($params,$msj)
 	$phpMailer->isSMTP();
 	$phpMailer->IsHTML(true);
 	$phpMailer->Debugoutput = 'html';
-	$phpMailer->Host        = 'mail.ddbmexico.com.mx';
-	$phpMailer->Port        = 587;
+	$phpMailer->Host        = 'mail.develupme.com';
+	$phpMailer->Port        = 465;
 	$phpMailer->SMTPAuth    = true;
 	$phpMailer->CharSet     = 'UTF-8';
 
-	$phpMailer->Username = 'alberto.perez@ddbmexico.com';
-	$phpMailer->Password = 'Enero2018';
+	$phpMailer->Username = 'hola@develupme.com';
+	$phpMailer->Password = '@lgo123#';
 
-	$phpMailer->setFrom('josepc11@hotmail.com', '');
+	$phpMailer->setFrom('info@escuelita.com', '');
 	$phpMailer->addAddress($params['mail'], $params['yo']);
 	$phpMailer->Subject = $params['asunto'];
 	$phpMailer->Body = (string)$msj;

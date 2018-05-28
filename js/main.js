@@ -194,21 +194,21 @@ $(document).ready(function() {
 
     if (check_name() && check_email() && check_message()) {
       $('.errores').hide();
-      var datos = $("#form").serialize();
+      var datos = $("#form").serialize(); 
       $.ajax({
                  type: "POST",
                  url: 'mandalo.php',
                  data: datos,
                  success: function(data)
                  {
-                      /*var content = JSON.parse(data);
+                      var content = JSON.parse(data);
                       if (content.info=="success"){
                         $("#mensaje").fadeIn('fast').html('<div class="ok">'+content.msg+'</div>');
                       }else{
                         $("#mensaje").fadeIn('fast').html('<div class="error">'+content.msg+'</div> <br /> <div id="backError" onClick="back();"> << Reintentar </div>');
 
-                      }*/
-                      alert('enviado');
+                      }
+                      //alert('enviado');
                  },
                  beforeSend: function(){
                   $('#form').fadeOut(500);
