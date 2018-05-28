@@ -55,16 +55,19 @@ function send($params,$msj)
 	$phpMailer->isSMTP();
 	$phpMailer->IsHTML(true);
 	$phpMailer->Debugoutput = 'html';
+	//Esta cambialo por 'smtp.gmail.com';
 	$phpMailer->Host        = 'mail.develupme.com';
+	//587
 	$phpMailer->Port        = 465;
 	$phpMailer->SMTPSecure = 'ssl';
 	$phpMailer->SMTPAuth    = true;
 	$phpMailer->CharSet     = 'UTF-8';
-
+//Creo que serias muy pendejo si no entiendes que debes cambiar aqui
 	$phpMailer->Username = 'hola@develupme.com';
 	$phpMailer->Password = '@lgo123#';
-
+//Este es el remitente
 	$phpMailer->setFrom('info@escuelita.com', 'Instituto Cultural de Estudios Superiores del Bosque');
+//Este es el destinatario
 	$phpMailer->addAddress('miguel.adrian.trejo@gmail.com', 'Oficina virtual');
 	$phpMailer->Subject = $params['asunto'];
 	$phpMailer->Body = (string)$msj;
