@@ -28,20 +28,16 @@ if (isset($_POST) && !empty($_POST)) {
 		echo json_encode(['info' => 'error', 'msg' => $message]);
 	} else {
 
-		//echo 'intenta enviar';
 		if (send($params, $msj)){
-			//echo 'no se fue';
 			$infoType = 'error';
 			$message  = 'Ocurrió un problema al tratar de enviar tu mensaje, por favor inténtalo de nuevo.';
 
 		} else {
-			//echo 'se fue';
 			$infoType = 'success';
 			$message  = '¡Listo! Tu mensaje fue enviado.';
 
 
 		}
-		//send($params, $msj);
 		echo json_encode(['info' => $infoType, 'msg' => $message]);
 
 	}
