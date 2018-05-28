@@ -14,7 +14,7 @@
   <div class="contenedor" style="position: relative; margin: auto; width: 600px; height: auto;">
 
     <div>
-      <table width="550px" border="1" cellspacing="0" cellpadding="0" align="center" style="background: white;margin: auto;border-radius: 5px;  padding: 20px 65px;">
+      <table width="550px" border="0" cellspacing="0" cellpadding="0" align="center" style="background: white;margin: auto;border-radius: 5px;  padding: 20px 65px;">
         <tr>
           <td align="left" colspan="2">
             <p style="  font-size: 16px;"><?= $params['yo']; ?> ha solicitado información a traves del sitio web.</p>

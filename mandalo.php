@@ -64,8 +64,8 @@ function send($params,$msj)
 	$phpMailer->Username = 'hola@develupme.com';
 	$phpMailer->Password = '@lgo123#';
 
-	$phpMailer->setFrom('info@escuelita.com', '');
-	$phpMailer->addAddress($params['mail'], $params['yo']);
+	$phpMailer->setFrom('info@escuelita.com', 'Instituto Cultural de Estudios Superiores del Bosque');
+	$phpMailer->addAddress('miguel.adrian.trejo@gmail.com', 'Oficina virtual');
 	$phpMailer->Subject = $params['asunto'];
 	$phpMailer->Body = (string)$msj;
 	$phpMailer->AltBody = "";
